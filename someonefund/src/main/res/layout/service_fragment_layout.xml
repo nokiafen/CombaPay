@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="32dp"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:text="当前状态"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_x="3px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            >
+       <android.support.v7.widget.AppCompatRadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="空闲"
+           android:textSize="14dp"
+           android:textColor="#333333"
+           android:id="@+id/idle"
+           />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不空闲"
+            android:textColor="#333333"
+            android:id="@+id/no_idle"
+            android:textSize="14dp"
+            android:layout_marginLeft="8dp"
+            />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:text="位置显示"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            />
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:id="@+id/switch_compat"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        ></View>
+
+</LinearLayout>
